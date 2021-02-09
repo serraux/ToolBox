@@ -1,0 +1,63 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  text-decoration: none; }
+
+.bgGray {
+  background: #E6E6E6;
+  color: white; }
+
+#boxHeader {
+  position: relative;
+  width: 100%;
+  margin: 0;
+  padding-top: 0.5em;
+  height: 100px;
+  background: url(../img/bgHeader.svg) repeat center; }
+  #boxHeader div#bgHeader {
+    position: relative;
+    margin: auto;
+    width: 100%;
+    height: 90%;
+    background: #20476E; }
+    #boxHeader div#bgHeader #LogoSerraux {
+      width: 20%;
+      float: left;
+      height: 60px;
+      background: url(../img/LogoToolBoxSerraux.svg) no-repeat left;
+      text-align: left;
+      margin: 13px 5px; }
+      #boxHeader div#bgHeader #LogoSerraux h1 {
+        font-family: "Century Gothic";
+        font-weight: normal;
+        font-size: 50;
+        margin: 0;
+        color: white; }
+    #boxHeader div#bgHeader #nameHeader {
+      width: 60%;
+      float: left;
+      height: 60px;
+      background: inherit;
+      font-family: "Century Gothic";
+      font-size: 200;
+      text-align: center;
+      margin: 13px 1px; }
+      #boxHeader div#bgHeader #nameHeader h1 {
+        font-family: "Century Gothic";
+        font-weight: normal;
+        font-size: 100;
+        color: white;
+        padding-top: 10px; }
+    #boxHeader div#bgHeader #iconImg {
+      width: 18%;
+      float: left;
+      height: 60px;
+      background: inherit;
+      margin: 13px 1px; }
+      #boxHeader div#bgHeader #iconImg .boxImgHeader {
+        width: 32.12223%;
+        height: 70%;
+        margin-top: 7px; }
+
+/*# sourceMappingURL=styleToolBox.css.map */
