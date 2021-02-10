@@ -104,11 +104,15 @@ list-style:none;
         line-height: 40px;
         font-size: 1.2em;
         color: #20476E;
-        a:hover{color: white;}
+        a{
+          display: block;
+
         &:hover{
-          background: #20476E;
           color: white;
+          background: #20476E;
+          }
         }
+
       }
     }
   }

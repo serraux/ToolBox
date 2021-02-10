@@ -80,10 +80,10 @@
       line-height: 40px;
       font-size: 1.2em;
       color: #20476E; }
-      .boxBannerTools nav#listTools .level1 a:hover {
-        color: white; }
-      .boxBannerTools nav#listTools .level1:hover {
-        background: #20476E;
-        color: white; }
+      .boxBannerTools nav#listTools .level1 a {
+        display: block; }
+        .boxBannerTools nav#listTools .level1 a:hover {
+          color: white;
+          background: #20476E; }
 
 /*# sourceMappingURL=styleToolBox.css.map */
