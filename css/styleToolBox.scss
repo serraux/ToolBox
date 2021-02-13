@@ -68,7 +68,7 @@ list-style:none;
         margin: 13px 1px;
 
         .boxImgHeader{
-          width: 32.12223%;
+          width: 32%;
           height: 70%;
           margin-top: 7px;
         }
@@ -98,7 +98,7 @@ list-style:none;
 
       .level1{
         float: left;
-        width: 24.9%;
+        width: 33.25%;
         border-right: 1px solid white;
         text-align: center;
         line-height: 40px;
@@ -117,4 +117,204 @@ list-style:none;
     }
   }
 
+}
+// Contenedor global para laconstrucción de los ejemplos
+.global-container{
+  // position: relative;
+  width: 90%;
+  // height: 600px;
+  margin: 2px auto;
+  background: #97B8D9;
+  text-align: center;
+  padding: 10px;
+  // overflow:auto;
+  margin-bottom: 10px;
+  div {
+  &.container{
+      background: white;
+      width: 99%;
+      height:350px;
+      margin: auto;
+    }
+   h2.subtitle{
+      text-align: left;
+      border-bottom: 1px solid #274D73;
+      font-style: italic;
+      color: #274D73;
+      margin-bottom: 1px;
+      // margin-top: 10px;
+      padding-top: 10px;
+    }
+    p.description{
+      text-align: left;
+      font-style: italic;
+      color: rgba(5,8,28,0.8);
+      span{
+        font-weight: bold;
+        color: rgba(5,8,28,0.8);
+
+      }
+    }
+    &.TrainingArea{
+      position: relative;
+      width: 100%;
+      height: 300px;
+      margin-top: 5px;
+      border-top: 1px solid #42420C;
+      background: #FAFAC3;
+      padding-top: 10px;
+      // overflow: hidden;
+    }
+  }
+
+
+}
+
+footer{
+  background: #20476E;
+  width: 100%;
+  height: 150px;
+}
+
+// ..Animaciones de fondos con imágenes
+.animations{
+  .bg1{
+    position: absolute;
+    width: 70%;
+    height: 60%;
+    margin: 20px 160px;
+      border-radius: 1em;
+    background: url(../img/1.BackgroundIMG/bg1.jpeg) center;
+    animation: myAnimation 30s linear 24s infinite;
+    -webkit-animation: myAnimation 30s  linear 24s infinite;
+    -moz-animation: myAnimation 30s  linear 24s infinite;
+  }
+  .bg2{
+    position: absolute;
+    width: 70%;
+    height: 60%;
+    margin: 20px 160px;
+      border-radius: 1em;
+    background: url(../img/1.BackgroundIMG/bg2.jpg) center;
+    animation: myAnimation 30s linear 18s infinite;
+    -webkit-animation: myAnimation 30s  linear 18s infinite;
+    -moz-animation: myAnimation 30s  linear 18s infinite;
+  }
+  .bg3{
+    position: absolute;
+    width: 70%;
+    height: 60%;
+    margin: 20px 160px;
+      border-radius: 1em;
+    background: url(../img/1.BackgroundIMG/bg3.jpg) center;
+    animation: myAnimation 30s linear 12s infinite;
+    -webkit-animation: myAnimation 30s  linear 12s infinite;
+    -moz-animation: myAnimation 30s  linear 12s infinite;
+  }
+  .bg4{
+    position: absolute;
+    width: 70%;
+    height: 60%;
+    margin: 20px 160px;
+      border-radius: 1em;
+    background: url(../img/1.BackgroundIMG/bg4.jpg) center;
+    animation: myAnimation 30s linear 6s infinite;
+    -webkit-animation: myAnimation 30s  linear 6s infinite;
+    -moz-animation: myAnimation 30s  linear 6s infinite;
+  }
+  .bg5{
+    position: absolute;
+    width: 70%;
+    height: 60%;
+    margin: 20px 160px;
+    border-radius: 1em;
+    background: url(../img/1.BackgroundIMG/bg5.jpg) center;
+    animation: myAnimation 30s linear 2s infinite;
+    -webkit-animation: myAnimation 30s  linear 2s infinite;
+    -moz-animation: myAnimation 30s linear 2s infinite;
+  }
+  @keyframes myAnimation {
+    0%{
+      opacity: 1;
+     }
+     20%{
+       opacity: 1;
+      }
+      30%{
+        opacity: 0;
+       }
+       60%{
+         opacity: 0;
+        }
+        90%{
+          opacity: 0;
+         }
+     100%{
+       opacity: 1;
+      }
+  }
+}
+
+
+// Menu desplegables
+
+.containner{
+    position: relative;
+    width: 70%;
+    height: 150px;
+    margin: 20px auto;
+    background: rgb(201, 134, 134);
+
+}
+
+#topmenu{
+        position: absolute;
+        background: rgb(142, 238, 123);
+        width:100%;
+	    height:50px;
+        bottom:0;
+        .nivel1{
+            float: left;
+            width: 33.2859252%;
+            background: rgb(110, 77, 230);
+            text-align: center;
+            line-height: 50px;
+
+        }
+        .nivel1 a{
+            color: seashell;
+        }
+
+        .nivel1:hover{
+            background: teal;
+            color: gray;
+        }
+        .nivel2:hover{
+        	background:rgb(243, 166, 77);
+        	transition:background .5s ease-out;
+        	}
+
+        .nivel2{
+            position:relative;
+        	left:-4px;
+        	width:100%;
+        	text-align:center;
+        	line-height:42px;
+        	border-top:4px solid #fff;
+        	border-left:4px solid #fff;
+        	border-right:4px solid #fff;
+        	background:silver;
+        	color:black;
+        }
+}
+
+
+
+
+#topmenu .nivel1 ul{
+    display: none;
+}
+
+#topmenu .nivel1:hover ul{
+    display: block;
 }
