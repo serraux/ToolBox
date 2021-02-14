@@ -7,7 +7,7 @@
 .boxGlobal {
   position: absolute;
   width: 100%;
-  background: orange;
+  background: #5c5b5b;
 }
 
 .boxGlobal .boxMedium {
@@ -15,7 +15,7 @@
   width: 95%;
   margin: 10px auto;
   height: 200px;
-  background: #345cca;
+  background: #b8b9bd;
   border: 2px solid silver;
 }
 
@@ -29,8 +29,8 @@
 
 #boxCustomOne .bCO-inner {
   float: left;
-  background: rosybrown;
-  width: 50%;
+  background: #eeeeee;
+  width: 49.9%;
   height: 100%;
   margin: auto;
   display: -webkit-box;
@@ -42,6 +42,7 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  border-right: 1px solid silver;
 }
 
 #boxCustomOne .bCO-inner .bckg1 {
@@ -50,16 +51,16 @@
   height: 60%;
   /*  margin: 5px auto; */
   background: white;
-  -webkit-animation: TransitionSlide 9s linear 8s infinite;
-          animation: TransitionSlide 9s linear 8s infinite;
+  -webkit-animation: TransitionOpacity 9s linear 8s infinite;
+          animation: TransitionOpacity 9s linear 8s infinite;
 }
 
 #boxCustomOne .bCO-inner .bckg1::before {
   content: 'Box 1';
   text-align: left;
-  background: chartreuse;
+  background: #88498F;
   display: block;
-  color: darkblue;
+  color: #2e0233;
   font-size: 2em;
   height: 100%;
   /* padding-top: 12.5%; */
@@ -71,16 +72,16 @@
   height: 60%;
   /*  margin: 5px auto; */
   background: white;
-  -webkit-animation: TransitionSlide 9s linear 5s infinite;
-          animation: TransitionSlide 9s linear 5s infinite;
+  -webkit-animation: TransitionOpacity 9s linear 5s infinite;
+          animation: TransitionOpacity 9s linear 5s infinite;
 }
 
 #boxCustomOne .bCO-inner .bckg2::before {
   content: 'Box 2';
   text-align: center;
-  background: #ff6600;
+  background: #70D7D6;
   display: block;
-  color: #18b8d4;
+  color: #034746;
   font-size: 2em;
   height: 100%;
   /* padding-top: 12.5%; */
@@ -92,22 +93,80 @@
   height: 60%;
   /*  margin: 5px auto; */
   background: white;
-  -webkit-animation: TransitionSlide 9s linear 3s infinite;
-          animation: TransitionSlide 9s linear 3s infinite;
+  -webkit-animation: TransitionOpacity 9s linear 3s infinite;
+          animation: TransitionOpacity 9s linear 3s infinite;
 }
 
 #boxCustomOne .bCO-inner .bckg3::before {
   content: 'Box 3';
   text-align: right;
-  background: #ff00bf;
+  background: #D7D670;
   display: block;
-  color: #d1d418;
+  color: #5f5e04;
   font-size: 2em;
   height: 100%;
   /*  padding-top: 12.5%; */
 }
 
-@-webkit-keyframes TransitionSlide {
+#boxCustomOne .bCO-inner .bckg4 {
+  position: absolute;
+  width: 45%;
+  height: 60%;
+  background: white;
+}
+
+#boxCustomOne .bCO-inner .bckg4::before {
+  content: 'Box 4';
+  text-align: left;
+  background: #88498F;
+  display: block;
+  color: #2e0233;
+  font-size: 2em;
+  height: 100%;
+  -webkit-animation: TransitionBg 3s linear 2s infinite;
+          animation: TransitionBg 3s linear 2s infinite;
+  z-index: 5;
+}
+
+#boxCustomOne .bCO-inner .bckg5 {
+  position: absolute;
+  width: 45%;
+  height: 60%;
+  background: white;
+}
+
+#boxCustomOne .bCO-inner .bckg5::before {
+  content: 'Box 5';
+  text-align: left;
+  background: #70D7D6;
+  display: block;
+  color: #034746;
+  font-size: 2em;
+  height: 100%;
+  -webkit-animation: TransitionBg2 3s linear 2s  infinite;
+          animation: TransitionBg2 3s linear 2s  infinite;
+}
+
+#boxCustomOne .bCO-inner .bckg6 {
+  position: absolute;
+  width: 45%;
+  height: 60%;
+  background: white;
+}
+
+#boxCustomOne .bCO-inner .bckg6::before {
+  content: 'Box 6';
+  text-align: right;
+  background: #D7D670;
+  display: block;
+  color: #5f5e04;
+  font-size: 2em;
+  height: 100%;
+  -webkit-animation: TransitionBg3 3s ease 2s infinite;
+          animation: TransitionBg3 3s ease 2s infinite;
+}
+
+@-webkit-keyframes TransitionOpacity {
   0% {
     opacity: 0;
   }
@@ -119,7 +178,7 @@
   }
 }
 
-@keyframes TransitionSlide {
+@keyframes TransitionOpacity {
   0% {
     opacity: 0;
   }
@@ -128,6 +187,100 @@
   }
   100% {
     opacity: 1;
+  }
+}
+
+@-webkit-keyframes TransitionBg {
+  from {
+    /* color: white  ;
+        opacity: 1; */
+    /* left: -20px; */
+    width: 0%;
+    height: 0%;
+  }
+  to {
+    /* color: black;  
+        opacity:0; */
+    /* left: 20px; */
+    width: 100%;
+    height: 100%;
+  }
+}
+
+@keyframes TransitionBg {
+  from {
+    /* color: white  ;
+        opacity: 1; */
+    /* left: -20px; */
+    width: 0%;
+    height: 0%;
+  }
+  to {
+    /* color: black;  
+        opacity:0; */
+    /* left: 20px; */
+    width: 100%;
+    height: 100%;
+  }
+}
+
+@-webkit-keyframes TransitionBg2 {
+  from {
+    /* color: white  ;
+        opacity: 1; */
+    /* left: -20px; */
+    width: 0%;
+  }
+  to {
+    /* color: black;  
+        opacity:0; */
+    /* left: 20px; */
+    width: 100%;
+  }
+}
+
+@keyframes TransitionBg2 {
+  from {
+    /* color: white  ;
+        opacity: 1; */
+    /* left: -20px; */
+    width: 0%;
+  }
+  to {
+    /* color: black;  
+        opacity:0; */
+    /* left: 20px; */
+    width: 100%;
+  }
+}
+
+@-webkit-keyframes TransitionBg3 {
+  from {
+    /* color: white  ;
+        opacity: 1; */
+    /* left: -20px; */
+    width: 100%;
+  }
+  to {
+    /* color: black;  
+        opacity:0; */
+    /* left: 20px; */
+    width: 0%;
+  }
+}
+
+@keyframes TransitionBg3 {
+  from {
+    /* color: white  ;
+        opacity: 1; */
+    /* left: -20px; */
+    width: 100%;
+  }
+  to {
+    /* color: black;  
+        opacity:0; */
+    /* left: 20px; */
+    width: 0%;
   }
 }
 /*# sourceMappingURL=FeaturesCss1.css.map */
