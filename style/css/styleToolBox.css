@@ -176,7 +176,7 @@
   height: 60%;
   margin: 20px 160px;
   border-radius: 1em;
-  background: url(/img/1.BackgroundIMG/bg1.jpeg) center;
+  background: url(../img/1.BackgroundIMG/bg1.jpeg) center;
   animation: myAnimation 30s linear 24s infinite;
   -webkit-animation: myAnimation 30s  linear 24s infinite;
   -moz-animation: myAnimation 30s  linear 24s infinite;
@@ -188,7 +188,7 @@
   height: 60%;
   margin: 20px 160px;
   border-radius: 1em;
-  background: url(/img/1.BackgroundIMG/bg2.jpg) center;
+  background: url(../img/1.BackgroundIMG/bg2.jpg) center;
   animation: myAnimation 30s linear 18s infinite;
   -webkit-animation: myAnimation 30s  linear 18s infinite;
   -moz-animation: myAnimation 30s  linear 18s infinite;
@@ -200,7 +200,7 @@
   height: 60%;
   margin: 20px 160px;
   border-radius: 1em;
-  background: url(/img/1.BackgroundIMG/bg3.jpg) center;
+  background: url(../img/1.BackgroundIMG/bg3.jpg) center;
   animation: myAnimation 30s linear 12s infinite;
   -webkit-animation: myAnimation 30s  linear 12s infinite;
   -moz-animation: myAnimation 30s  linear 12s infinite;
@@ -212,7 +212,7 @@
   height: 60%;
   margin: 20px 160px;
   border-radius: 1em;
-  background: url(/img/1.BackgroundIMG/bg4.jpg) center;
+  background: url(../img/1.BackgroundIMG/bg4.jpg) center;
   animation: myAnimation 30s linear 6s infinite;
   -webkit-animation: myAnimation 30s  linear 6s infinite;
   -moz-animation: myAnimation 30s  linear 6s infinite;
@@ -224,7 +224,7 @@
   height: 60%;
   margin: 20px 160px;
   border-radius: 1em;
-  background: url(/img/1.BackgroundIMG/bg5.jpg) center;
+  background: url(../img/1.BackgroundIMG/bg5.jpg) center;
   animation: myAnimation 30s linear 2s infinite;
   -webkit-animation: myAnimation 30s  linear 2s infinite;
   -moz-animation: myAnimation 30s linear 2s infinite;
