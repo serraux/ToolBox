@@ -1,0 +1,61 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+header{
+    position: absolute;
+    width: 100%;
+    height:40px;
+    background: rgb(8, 153, 172);
+    color: white;
+    padding: 5px auto;
+
+}
+body{
+    background: rgb(199, 238, 243);
+}
+.layout{
+    position: absolute;
+    width: 100%;
+    height: 400px;
+    margin-top: 40px;
+    background: silver;
+    display: grid;
+    grid-template-areas: 
+    "header"
+    "sidebar"
+    "main"
+    "sidebar-right"
+    "footer";
+    grid-template-rows: auto auto 1fr auto auto;
+
+    & > header{
+        grid-area: header;
+    }
+    & > aside:nth-of-type(1){
+        grid-area: sidebar;
+    }
+    & > main{
+        grid-area: main;
+    }
+    & > aside:nth-of-type(2){
+        grid-area: sidebar-right;
+    } 
+    & > footer{
+        grid-area: footer;
+    } 
+   
+}
+@media(min-width:40rem){/* Breakpoint tablet portrait */
+    .layout {
+		grid-template-areas:
+			"header header header"
+			"sidebar main sidebar-right"
+			"footer footer footer";
+		grid-template-rows: auto 1fr auto;
+		grid-template-columns: 20% 1fr 20%;
+	}
+
+
+}
