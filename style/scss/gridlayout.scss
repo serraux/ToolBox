@@ -1,10 +1,11 @@
 *{
     margin: 0;
     padding: 0;
+    font-family: sans-serif;
 
 }
 header{
-    position: absolute;
+    
     width: 100%;
     height:40px;
     background: rgb(8, 153, 172);
@@ -32,18 +33,27 @@ body{
 
     & > header{
         grid-area: header;
+        background: goldenrod;
+        width: 200px;
+        height: 60px;
     }
     & > aside:nth-of-type(1){
         grid-area: sidebar;
+        background: blueviolet;
+        width: 50%;
+        height: 20%;
     }
     & > main{
         grid-area: main;
+        background: teal;
     }
     & > aside:nth-of-type(2){
         grid-area: sidebar-right;
+        background: steelblue;
     } 
     & > footer{
         grid-area: footer;
+        background: lightblue;
     } 
    
 }
@@ -58,4 +68,68 @@ body{
 	}
 
 
+}
+
+
+/* Ejemplo de diseño de grid layut responsive */
+.global-container{
+     div p{
+         font-size: 1em;
+         padding: 1em 1em;
+         span{
+             font-weight: bold;
+         }
+     }   
+    .gridLayoutOne {
+        padding: 10px;
+        display: grid;
+        grid-template-columns: auto auto auto ;
+        & > div{
+        background: #944439;
+        border: 1px solid white;
+        font-size: 4em;
+        font-weight: bold;
+        color: rgb(208, 222, 223);
+        text-align: center;
+           
+        }
+    }
+    .gridLayoutTwo {
+        padding: 10px;
+        display: grid;
+        grid-template-columns: auto auto auto ;
+        & > div{
+        background: #944439;
+        border: 1px solid white;
+        font-size: 4em;
+        font-weight: bold;
+        color: rgb(208, 222, 223);
+        text-align: center;
+            &:nth-child(1){
+                 grid-row-start: 1;
+                 grid-row-end: 5;
+            }
+        }
+    }
+    .gridLayoutThree {
+        padding: 10px;
+        display: inline-grid;
+        grid-template-columns: auto auto  auto;
+        // grid-column-gap: 20px;
+        & > div{
+        background: #399494;
+        border: 1px solid white;
+        font-size: 4em;
+        font-weight: bold;
+        color: rgb(208, 222, 223);
+        text-align: center;
+        padding: 3px;
+           &:nth-child(1){
+                 grid-row-start: 1;
+                 grid-row-end: 5;
+            }
+        }
+
+        
+    }
 }
