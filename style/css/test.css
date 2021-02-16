@@ -65,9 +65,15 @@
   width: 49.9%;
   height: 100%;
   margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   border-right: 1px solid silver;
   /* ejerciio de efectos de transición */
 }
@@ -78,7 +84,8 @@
   height: 60%;
   /*  margin: 5px auto; */
   background: white;
-  animation: TransitionOpacity 9s linear 8s infinite;
+  -webkit-animation: TransitionOpacity 9s linear 8s infinite;
+          animation: TransitionOpacity 9s linear 8s infinite;
 }
 
 #boxCustomOne .bCO-inner .bckg1::before {
@@ -98,7 +105,8 @@
   height: 60%;
   /*  margin: 5px auto; */
   background: white;
-  animation: TransitionOpacity 9s linear 5s infinite;
+  -webkit-animation: TransitionOpacity 9s linear 5s infinite;
+          animation: TransitionOpacity 9s linear 5s infinite;
 }
 
 #boxCustomOne .bCO-inner .bckg2::before {
@@ -118,7 +126,8 @@
   height: 60%;
   /*  margin: 5px auto; */
   background: white;
-  animation: TransitionOpacity 9s linear 3s infinite;
+  -webkit-animation: TransitionOpacity 9s linear 3s infinite;
+          animation: TransitionOpacity 9s linear 3s infinite;
 }
 
 #boxCustomOne .bCO-inner .bckg3::before {
@@ -147,7 +156,8 @@
   color: #2e0233;
   font-size: 2em;
   height: 100%;
-  animation: TransitionBg 3s linear 2s infinite;
+  -webkit-animation: TransitionBg 3s linear 2s infinite;
+          animation: TransitionBg 3s linear 2s infinite;
   z-index: 5;
 }
 
@@ -166,7 +176,8 @@
   color: #034746;
   font-size: 2em;
   height: 100%;
-  animation: TransitionBg2 3s linear 2s  infinite;
+  -webkit-animation: TransitionBg2 3s linear 2s  infinite;
+          animation: TransitionBg2 3s linear 2s  infinite;
 }
 
 #boxCustomOne .bCO-inner .bckg6 {
@@ -184,7 +195,20 @@
   color: #5f5e04;
   font-size: 2em;
   height: 100%;
-  animation: TransitionBg3 3s ease 2s infinite;
+  -webkit-animation: TransitionBg3 3s ease 2s infinite;
+          animation: TransitionBg3 3s ease 2s infinite;
+}
+
+@-webkit-keyframes TransitionOpacity {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 @keyframes TransitionOpacity {
@@ -196,6 +220,23 @@
   }
   100% {
     opacity: 1;
+  }
+}
+
+@-webkit-keyframes TransitionBg {
+  from {
+    /* color: white  ;
+        opacity: 1; */
+    /* left: -20px; */
+    width: 0%;
+    height: 0%;
+  }
+  to {
+    /* color: black;  
+        opacity:0; */
+    /* left: 20px; */
+    width: 100%;
+    height: 100%;
   }
 }
 
@@ -216,6 +257,21 @@
   }
 }
 
+@-webkit-keyframes TransitionBg2 {
+  from {
+    /* color: white  ;
+        opacity: 1; */
+    /* left: -20px; */
+    width: 0%;
+  }
+  to {
+    /* color: black;  
+        opacity:0; */
+    /* left: 20px; */
+    width: 100%;
+  }
+}
+
 @keyframes TransitionBg2 {
   from {
     /* color: white  ;
@@ -228,6 +284,21 @@
         opacity:0; */
     /* left: 20px; */
     width: 100%;
+  }
+}
+
+@-webkit-keyframes TransitionBg3 {
+  from {
+    /* color: white  ;
+        opacity: 1; */
+    /* left: -20px; */
+    width: 100%;
+  }
+  to {
+    /* color: black;  
+        opacity:0; */
+    /* left: 20px; */
+    width: 0%;
   }
 }
 
@@ -251,9 +322,15 @@
   position: relative;
   width: 100%;
   height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .grid > div {

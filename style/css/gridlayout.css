@@ -23,12 +23,16 @@ body {
   height: 400px;
   margin-top: 40px;
   background: silver;
+  display: -ms-grid;
   display: grid;
-  grid-template-areas: "header" "sidebar" "main" "sidebar-right" "footer";
-  grid-template-rows: auto auto 1fr auto auto;
+      grid-template-areas: "header" "sidebar" "main" "sidebar-right" "footer";
+  -ms-grid-rows: auto auto 1fr auto auto;
+      grid-template-rows: auto auto 1fr auto auto;
 }
 
 .layout > header {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
   grid-area: header;
   background: goldenrod;
   width: 200px;
@@ -36,6 +40,8 @@ body {
 }
 
 .layout > aside:nth-of-type(1) {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
   grid-area: sidebar;
   background: blueviolet;
   width: 50%;
@@ -43,16 +49,22 @@ body {
 }
 
 .layout > main {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
   grid-area: main;
   background: teal;
 }
 
 .layout > aside:nth-of-type(2) {
+  -ms-grid-row: 4;
+  -ms-grid-column: 1;
   grid-area: sidebar-right;
   background: steelblue;
 }
 
 .layout > footer {
+  -ms-grid-row: 5;
+  -ms-grid-column: 1;
   grid-area: footer;
   background: lightblue;
 }
@@ -60,9 +72,11 @@ body {
 @media (min-width: 40rem) {
   /* Breakpoint tablet portrait */
   .layout {
-    grid-template-areas: "header header header" "sidebar main sidebar-right" "footer footer footer";
-    grid-template-rows: auto 1fr auto;
-    grid-template-columns: 20% 1fr 20%;
+        grid-template-areas: "header header header" "sidebar main sidebar-right" "footer footer footer";
+    -ms-grid-rows: auto 1fr auto;
+        grid-template-rows: auto 1fr auto;
+    -ms-grid-columns: 20% 1fr 20%;
+        grid-template-columns: 20% 1fr 20%;
   }
 }
 
@@ -78,8 +92,10 @@ body {
 
 .global-container .gridLayoutOne {
   padding: 10px;
+  display: -ms-grid;
   display: grid;
-  grid-template-columns: auto auto auto;
+  -ms-grid-columns: auto auto auto;
+      grid-template-columns: auto auto auto;
 }
 
 .global-container .gridLayoutOne > div {
@@ -93,8 +109,10 @@ body {
 
 .global-container .gridLayoutTwo {
   padding: 10px;
+  display: -ms-grid;
   display: grid;
-  grid-template-columns: auto auto auto;
+  -ms-grid-columns: auto auto auto;
+      grid-template-columns: auto auto auto;
 }
 
 .global-container .gridLayoutTwo > div {
@@ -107,14 +125,17 @@ body {
 }
 
 .global-container .gridLayoutTwo > div:nth-child(1) {
-  grid-row-start: 1;
+  -ms-grid-row: 1;
+      grid-row-start: 1;
   grid-row-end: 5;
 }
 
 .global-container .gridLayoutThree {
   padding: 10px;
+  display: -ms-inline-grid;
   display: inline-grid;
-  grid-template-columns: auto auto  auto;
+  -ms-grid-columns: auto auto  auto;
+      grid-template-columns: auto auto  auto;
 }
 
 .global-container .gridLayoutThree > div {
@@ -128,7 +149,8 @@ body {
 }
 
 .global-container .gridLayoutThree > div:nth-child(1) {
-  grid-row-start: 1;
+  -ms-grid-row: 1;
+      grid-row-start: 1;
   grid-row-end: 5;
 }
 /*# sourceMappingURL=gridlayout.css.map */
