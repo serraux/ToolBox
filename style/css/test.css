@@ -1,7 +1,107 @@
 @charset "UTF-8";
 * {
-  margin: 0%;
-  padding: 0%;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+  background: #034746;
+}
+
+.container-global {
+  width: 100%;
+  height: 100%;
+  background: #48e2c1;
+}
+
+.container-global :nth-child(1) {
+  width: 100%;
+  height: 10%;
+  background: #282b2a;
+}
+
+.container-global :nth-child(1) a {
+  background: silver;
+}
+
+.container-global :nth-child(1) a:hover {
+  background: green;
+  color: white;
+}
+
+.container-global :nth-child(2) {
+  width: 100%;
+  height: 90%;
+  background: white;
+}
+
+.container-global :nth-child(2) .box-left {
+  width: 35%;
+  height: 100%;
+  background: #7f4985;
+  float: left;
+  overflow-y: auto;
+}
+
+.container-global :nth-child(2) .box-left > div {
+  width: 100%;
+  height: 40%;
+  margin-bottom: 2px;
+  background: lightgreen;
+}
+
+.container-global :nth-child(2) .box-right {
+  width: 65%;
+  height: 100%;
+  background: #dacd25;
+  float: right;
+  overflow-y: auto;
+}
+
+.container-global :nth-child(2) .box-right > div {
+  width: 100%;
+  height: 25%;
+  border-bottom: 5px solid black;
+  background: #ecee90;
+}
+
+.container-global-test {
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+  background: #bcee08;
+}
+
+.container-global-test .box-header {
+  width: 100%;
+  height: 11%;
+  padding-top: 5px;
+  background: #4dd6d4;
+  text-align: center;
+  -webkit-box-shadow: 1px 1px 1px 1px #F4AAB9;
+          box-shadow: 1px 1px 1px 1px #F4AAB9;
+  margin-bottom: 1px;
+}
+
+.container-global-test .box-header :nth-child(1) {
+  border-bottom: 1px solid #59acaa;
+  display: inline-block;
+  margin-bottom: 2px;
+  padding: 3px;
+}
+
+.container-global-test .box-body {
+  width: 100%;
+  height: 88%;
+  background: #0fa8b3;
+  text-align: center;
 }
 
 .bannerHeader {
