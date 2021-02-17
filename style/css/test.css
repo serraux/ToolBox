@@ -8,10 +8,9 @@
 
 html, body {
   width: 100%;
-  height: 100%;
   margin: 0px;
   padding: 0px;
-  background: #034746;
+  background: #c93f08;
 }
 
 .container-global {
@@ -71,23 +70,24 @@ html, body {
   background: #ecee90;
 }
 
+/* content  boxes structures */
 .container-global-test {
   width: 100%;
-  height: 100%;
   margin: 0px;
   padding: 0px;
-  background: #bcee08;
+  background: #DD7F75;
 }
 
 .container-global-test .box-header {
   width: 100%;
-  height: 11%;
+  height: 70px;
   padding-top: 5px;
-  background: #4dd6d4;
+  background: #75D3DD;
   text-align: center;
-  -webkit-box-shadow: 1px 1px 1px 1px #F4AAB9;
-          box-shadow: 1px 1px 1px 1px #F4AAB9;
-  margin-bottom: 1px;
+  border-bottom: 1.8px solid #DD7F75;
+  border-top: 1.8px solid #DD7F75;
+  border-top-left-radius: 80px;
+  border-bottom-right-radius: 80px;
 }
 
 .container-global-test .box-header :nth-child(1) {
@@ -98,196 +98,216 @@ html, body {
 }
 
 .container-global-test .box-body {
-  width: 100%;
-  height: 88%;
-  background: #0fa8b3;
-  text-align: center;
-}
-
-.bannerHeader {
   position: absolute;
   width: 100%;
-  height: 45px;
-  background: #9be2d3;
-  color: #34504d;
-}
-
-.bannerHeader div:nth-child(1) {
-  float: left;
-  width: 10%;
-  height: 90%;
-  padding: 5px 15px;
-  font-style: italic;
+  background: #acd5d8;
   text-align: center;
-  border-right: 1px solid #538582;
+  overflow: auto;
 }
 
-.bannerHeader div:nth-child(2) {
-  float: left;
-  width: 87%;
-  height: 90%;
-  text-align: center;
-}
-
-.bannerHeader div:nth-child(2) h1 {
-  font-family: 'Century Gothic','Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  font-weight: 100;
-}
-
-/* box Layout */
-.boxGlobal {
-  position: absolute;
-  width: 100%;
-  background: #d5dde7;
-  margin: 45px auto;
-}
-
-.boxGlobal .boxMedium {
+.container-global-test .box-body .box-item {
   position: relative;
-  width: 95%;
-  margin: 10px auto;
-  height: 200px;
-  background: #b8b9bd;
-  border: 2px solid silver;
+  width: 90%;
+  height: 120px;
+  margin: 15px auto;
+  border: 1px solid #888f8f;
+  border-radius: 55px;
+  -webkit-box-shadow: 0px 5px 5px 2px #818685;
+          box-shadow: 0px 5px 5px 2px #818685;
 }
 
-/* box custom */
-#boxCustomOne {
-  /* position: relative; */
-  width: 100%;
+.container-global-test .box-body .box-item :nth-child(1) {
+  width: 50%;
   height: 100%;
-  margin: auto;
-}
-
-#boxCustomOne .bCO-inner {
   float: left;
-  background: #eeeeee;
-  width: 49.9%;
+  background: inherit;
+  border-top-left-radius: 80px;
+  border-bottom-left-radius: 80px;
+}
+
+.container-global-test .box-body .box-item :nth-child(2) {
+  width: 50%;
   height: 100%;
-  margin: auto;
+  float: right;
+  background: inherit;
+  border-top-right-radius: 80px;
+  border-bottom-right-radius: 80px;
+}
+
+.container-global-test .box-footer {
+  position: relative;
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  border-right: 1px solid silver;
-  /* ejerciio de efectos de transición */
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
-#boxCustomOne .bCO-inner .bckg1 {
+.container-global-test .box-footer :nth-child(1) {
+  width: 100%;
+  height: 140px;
+  background: #DD7F75;
+}
+
+/* Excercises */
+/* Example1 */
+/* ejercicio de efectos de transición */
+.container-global-test .box-body .box-item :nth-child(1) .exercise1 {
+  width: 100%;
+  height: 100%;
+}
+
+.container-global-test .box-body .box-item :nth-child(1) .exercise1 :nth-child(1) {
   position: absolute;
-  width: 45%;
-  height: 60%;
-  /*  margin: 5px auto; */
-  background: white;
+  width: 50%;
+  height: 100%;
   -webkit-animation: TransitionOpacity 9s linear 8s infinite;
           animation: TransitionOpacity 9s linear 8s infinite;
 }
 
-#boxCustomOne .bCO-inner .bckg1::before {
+.container-global-test .box-body .box-item :nth-child(1) .exercise1 :nth-child(1)::before {
   content: 'Box 1';
-  text-align: left;
-  background: #88498F;
+  text-align: center;
+  background: #b998bd;
   display: block;
-  color: #2e0233;
-  font-size: 2em;
+  color: white;
+  font-size: 1em;
   height: 100%;
-  /* padding-top: 12.5%; */
+  border-top-left-radius: 50px;
+  border-bottom-left-radius: 50px;
 }
 
-#boxCustomOne .bCO-inner .bckg2 {
+.container-global-test .box-body .box-item :nth-child(1) .exercise1 :nth-child(2) {
   position: absolute;
-  width: 45%;
-  height: 60%;
-  /*  margin: 5px auto; */
-  background: white;
+  width: 50%;
+  height: 100%;
+  -webkit-animation: TransitionOpacity 9s linear 2s infinite;
+          animation: TransitionOpacity 9s linear 2s infinite;
+}
+
+.container-global-test .box-body .box-item :nth-child(1) .exercise1 :nth-child(2)::before {
+  content: 'Box 2';
+  text-align: right;
+  background: #498f66;
+  display: block;
+  color: #b998bd;
+  font-size: 1em;
+  height: 100%;
+  border-top-left-radius: 50px;
+  border-bottom-left-radius: 50px;
+}
+
+.container-global-test .box-body .box-item :nth-child(1) .exercise1 :nth-child(3) {
+  position: absolute;
+  width: 50%;
+  height: 100%;
   -webkit-animation: TransitionOpacity 9s linear 5s infinite;
           animation: TransitionOpacity 9s linear 5s infinite;
 }
 
-#boxCustomOne .bCO-inner .bckg2::before {
-  content: 'Box 2';
-  text-align: center;
-  background: #70D7D6;
-  display: block;
-  color: #034746;
-  font-size: 2em;
-  height: 100%;
-  /* padding-top: 12.5%; */
-}
-
-#boxCustomOne .bCO-inner .bckg3 {
-  position: absolute;
-  width: 45%;
-  height: 60%;
-  /*  margin: 5px auto; */
-  background: white;
-  -webkit-animation: TransitionOpacity 9s linear 3s infinite;
-          animation: TransitionOpacity 9s linear 3s infinite;
-}
-
-#boxCustomOne .bCO-inner .bckg3::before {
+.container-global-test .box-body .box-item :nth-child(1) .exercise1 :nth-child(3)::before {
   content: 'Box 3';
-  text-align: right;
-  background: #D7D670;
+  text-align: center;
+  background: #e7e970;
   display: block;
-  color: #5f5e04;
-  font-size: 2em;
+  color: #1d1a1d;
+  font-size: 1em;
   height: 100%;
-  /*  padding-top: 12.5%; */
+  border-top-left-radius: 50px;
+  border-bottom-left-radius: 50px;
 }
 
-#boxCustomOne .bCO-inner .bckg4 {
+/* Example 2 */
+.container-global-test .box-body .box-item :nth-child(2) .exercise2 {
+  width: 50%;
+  height: 100%;
+}
+
+.container-global-test .box-body .box-item :nth-child(2) .exercise2 :nth-child(1) {
   position: absolute;
-  width: 45%;
-  height: 60%;
-  background: white;
+  width: 50%;
+  height: 100%;
+  -webkit-animation: TransitionBg 5s linear 1.5s infinite;
+          animation: TransitionBg 5s linear 1.5s infinite;
 }
 
-#boxCustomOne .bCO-inner .bckg4::before {
+.container-global-test .box-body .box-item :nth-child(2) .exercise2 :nth-child(1)::before {
   content: 'Box 4';
-  text-align: left;
-  background: #88498F;
+  text-align: center;
+  background: #b998bd;
   display: block;
-  color: #2e0233;
-  font-size: 2em;
+  color: white;
+  font-size: 1em;
   height: 100%;
-  -webkit-animation: TransitionBg 3s linear 2s infinite;
-          animation: TransitionBg 3s linear 2s infinite;
-  z-index: 5;
+  border-top-right-radius: 50px;
+  border-bottom-right-radius: 50px;
 }
 
-#boxCustomOne .bCO-inner .bckg5 {
+/* Example 3 */
+.container-global-test .box-body .box-item :nth-child(1) .exercise3 {
+  width: 100%;
+  height: 100%;
+}
+
+.container-global-test .box-body .box-item :nth-child(1) .exercise3 :nth-child(1) {
   position: absolute;
-  width: 45%;
-  height: 60%;
-  background: white;
+  width: 50%;
+  height: 100%;
+  -webkit-animation: TransitionBg2 4s linear 2s infinite;
+          animation: TransitionBg2 4s linear 2s infinite;
 }
 
-#boxCustomOne .bCO-inner .bckg5::before {
+.container-global-test .box-body .box-item :nth-child(1) .exercise3 :nth-child(1)::before {
   content: 'Box 5';
-  text-align: left;
-  background: #70D7D6;
+  text-align: right;
+  background: #498f66;
   display: block;
-  color: #034746;
-  font-size: 2em;
+  color: white;
+  font-size: 1em;
   height: 100%;
-  -webkit-animation: TransitionBg2 3s linear 2s  infinite;
-          animation: TransitionBg2 3s linear 2s  infinite;
+  border-top-left-radius: 50px;
+  border-bottom-left-radius: 50px;
 }
 
-#boxCustomOne .bCO-inner .bckg6 {
+/* Example 4 */
+.container-global-test .box-body .box-item :nth-child(2) .exercise4 {
+  width: 50%;
+  height: 100%;
+}
+
+.container-global-test .box-body .box-item :nth-child(2) .exercise4 :nth-child(1) {
+  position: absolute;
+  width: 50%;
+  height: 100%;
+  -webkit-animation: TransitionBg3 5s linear 1.5s infinite;
+          animation: TransitionBg3 5s linear 1.5s infinite;
+}
+
+.container-global-test .box-body .box-item :nth-child(2) .exercise4 :nth-child(1)::before {
+  content: 'Box 4';
+  text-align: center;
+  background: #e7e970;
+  display: block;
+  color: white;
+  font-size: 1em;
+  height: 100%;
+  border-top-right-radius: 50px;
+  border-bottom-right-radius: 50px;
+}
+
+.example6 {
   position: absolute;
   width: 45%;
   height: 60%;
   background: white;
 }
 
-#boxCustomOne .bCO-inner .bckg6::before {
+.example6::before {
   content: 'Box 6';
   text-align: right;
   background: #D7D670;
@@ -299,6 +319,7 @@ html, body {
           animation: TransitionBg3 3s ease 2s infinite;
 }
 
+/* Transiciones y animaciones */
 @-webkit-keyframes TransitionOpacity {
   0% {
     opacity: 0;
@@ -310,7 +331,6 @@ html, body {
     opacity: 1;
   }
 }
-
 @keyframes TransitionOpacity {
   0% {
     opacity: 0;
@@ -335,7 +355,7 @@ html, body {
     /* color: black;  
         opacity:0; */
     /* left: 20px; */
-    width: 100%;
+    width: 50%;
     height: 100%;
   }
 }
@@ -352,7 +372,7 @@ html, body {
     /* color: black;  
         opacity:0; */
     /* left: 20px; */
-    width: 100%;
+    width: 50%;
     height: 100%;
   }
 }
@@ -368,7 +388,7 @@ html, body {
     /* color: black;  
         opacity:0; */
     /* left: 20px; */
-    width: 100%;
+    width: 50%;
   }
 }
 
@@ -383,7 +403,7 @@ html, body {
     /* color: black;  
         opacity:0; */
     /* left: 20px; */
-    width: 100%;
+    width: 50%;
   }
 }
 
@@ -392,7 +412,7 @@ html, body {
     /* color: white  ;
         opacity: 1; */
     /* left: -20px; */
-    width: 100%;
+    width: 50%;
   }
   to {
     /* color: black;  
@@ -407,7 +427,7 @@ html, body {
     /* color: white  ;
         opacity: 1; */
     /* left: -20px; */
-    width: 100%;
+    width: 50%;
   }
   to {
     /* color: black;  
@@ -418,44 +438,4 @@ html, body {
 }
 
 /* Ejercicio de construcción de gridlayout responsive */
-.grid {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-.grid > div {
-  background: #9df59d;
-  height: 50%;
-  width: 33%;
-  float: left;
-  margin-right: 1px solid silver;
-}
-
-.grid :nth-child(2) {
-  background: #cf9393;
-}
-
-.grid :nth-child(2) > p {
-  text-align: center;
-  font-size: 1;
-  padding: 2em;
-  color: white;
-}
-
-.grid :nth-child(2) > a {
-  background: #9df59d;
-  display: block;
-  text-align: center;
-  font-style: oblique;
-}
 /*# sourceMappingURL=test.css.map */
