@@ -107,7 +107,7 @@ html, body {
 .container-global-test .box-body .box-item {
   position: relative;
   width: 90%;
-  height: 120px;
+  height: 60px;
   margin: 15px auto;
   border: 1px solid #888f8f;
   border-radius: 55px;
@@ -151,7 +151,9 @@ html, body {
 .container-global-test .box-body .box-footer :nth-child(1) {
   position: relative;
   width: 100%;
-  height: 140px;
+  height: 40px;
+  font-family: "Features";
+  font-weight: normal;
   background: #09A7A1;
 }
 
