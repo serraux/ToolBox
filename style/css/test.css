@@ -303,23 +303,18 @@ html, body {
   border-bottom-right-radius: 50px;
 }
 
-.example6 {
-  position: absolute;
-  width: 45%;
-  height: 60%;
-  background: white;
+.container-global-test .box-body .box-item :nth-child(1) .exercise5 {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background: #055451;
+  text-align: center;
 }
 
-.example6::before {
-  content: 'Box 6';
-  text-align: right;
-  background: #C2E9E8;
-  display: block;
-  color: #033F3C;
-  font-size: 2em;
-  height: 100%;
-  -webkit-animation: TransitionBg3 3s ease 2s infinite;
-          animation: TransitionBg3 3s ease 2s infinite;
+.container-global-test .box-body .box-item :nth-child(1) .exercise5 a {
+  color: white;
+  background: #077D79;
+  margin: 2px auto;
 }
 
 /* Transiciones y animaciones */
@@ -439,6 +434,4 @@ html, body {
     width: 0%;
   }
 }
-
-/* Ejercicio de construcción de gridlayout responsive */
 /*# sourceMappingURL=test.css.map */

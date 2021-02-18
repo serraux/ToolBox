@@ -3,7 +3,7 @@
     padding: 0;
     text-decoration: none;
     list-style: none;
-    font-family: sans-serif
+    font-family: sans-serif;
 }
 
 html, body{
@@ -113,6 +113,7 @@ html, body{
                 background: inherit;
                 border-top-left-radius: 80px;
                 border-bottom-left-radius: 80px;
+                
                 
             }
             & :nth-child(2){
@@ -272,7 +273,6 @@ html, body{
     
   }
     
-
   /* Example 4 */
 .container-global-test .box-body .box-item :nth-child(2) .exercise4 {
   
@@ -301,25 +301,22 @@ html, body{
     
   }
      
-
-          .example6{
-            position: absolute;
-            width: 45%;
-            height: 60%;
-            background: white;
-            
-            &::before{
-                content: 'Box 6';
-                text-align: right;
-                background: #C2E9E8;
-                display: block;
-                color: #033F3C;
-                font-size: 2em;
-                height: 100%;
-              animation: TransitionBg3 3s ease 2s infinite;
-                
-            }
-        }
+.container-global-test .box-body .box-item :nth-child(1) .exercise5{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background: #055451;
+    text-align: center;
+   
+    a{
+        
+        color: white;
+        background: #077D79;
+        margin: 2px auto;
+       
+        
+    }
+} 
 
 /* Transiciones y animaciones */
 @keyframes TransitionOpacity{
@@ -401,6 +398,6 @@ html, body{
 
 }
 
-/* Ejercicio de construcción de gridlayout responsive */
+
 
 
