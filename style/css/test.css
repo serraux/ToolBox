@@ -11,7 +11,7 @@ html, body {
   width: 100%;
   margin: 0px;
   padding: 0px;
-  background: #3E3D42;
+  background: #39373D;
 }
 
 .container-global {
@@ -76,7 +76,7 @@ html, body {
   width: 100%;
   margin: 0px;
   padding: 0px;
-  background: #3E3D42;
+  background: #39373D;
 }
 
 .container-global-test .box-header {
@@ -382,7 +382,7 @@ html, body {
     /* color: white  ;
         opacity: 1; */
     /* left: -20px; */
-    width: 0%;
+    width: 8%;
   }
   to {
     /* color: black;  
@@ -397,7 +397,7 @@ html, body {
     /* color: white  ;
         opacity: 1; */
     /* left: -20px; */
-    width: 0%;
+    width: 8%;
   }
   to {
     /* color: black;  
