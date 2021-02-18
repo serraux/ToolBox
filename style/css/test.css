@@ -11,7 +11,7 @@ html, body {
   width: 100%;
   margin: 0px;
   padding: 0px;
-  background: #c93f08;
+  background: #3E3D42;
 }
 
 .container-global {
@@ -76,23 +76,21 @@ html, body {
   width: 100%;
   margin: 0px;
   padding: 0px;
-  background: #DD7F75;
+  background: #3E3D42;
 }
 
 .container-global-test .box-header {
   width: 100%;
-  height: 70px;
+  height: 60px;
   padding-top: 5px;
-  background: #75D3DD;
+  background: #333333;
   text-align: center;
-  border-bottom: 1.8px solid #DD7F75;
-  border-top: 1.8px solid #DD7F75;
+  color: white;
   border-top-left-radius: 80px;
   border-bottom-right-radius: 80px;
 }
 
 .container-global-test .box-header :nth-child(1) {
-  border-bottom: 1px solid #59acaa;
   display: inline-block;
   margin-bottom: 2px;
   padding: 3px;
@@ -101,7 +99,7 @@ html, body {
 .container-global-test .box-body {
   position: absolute;
   width: 100%;
-  background: #acd5d8;
+  background: white;
   text-align: center;
   overflow: auto;
 }
@@ -141,18 +139,19 @@ html, body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-align: left;
+      -ms-flex-align: left;
+          align-items: left;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+  color: white;
 }
 
 .container-global-test .box-footer :nth-child(1) {
   width: 100%;
   height: 140px;
-  background: #DD7F75;
+  background: #3E3D42;
 }
 
 /* Excercises */
