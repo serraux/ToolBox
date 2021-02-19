@@ -104,7 +104,6 @@ html, body{
             margin: 15px auto;
             border: 1px solid rgb(136, 143, 143);
             border-radius: 55px;
-            //box-shadow: 0px 5px 5px 2px #818685;
             box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
             & :nth-child(1){
                 width: 50%;
@@ -155,13 +154,13 @@ html, body{
 /* Example1 */
 /* ejercicio de efectos de transición */
 
-.container-global-test .box-body .box-item :nth-child(1) .exercise1 {
+.container-global-test .box-body .box-item #exercise1 {
   
     width: 100%;
     height: 100%;
     :nth-child(1){
         position: absolute;
-        width: 50%;
+        width: 100%;
         height:100%;
         
         animation: TransitionOpacity 9s linear 8s infinite;
@@ -173,33 +172,37 @@ html, body{
             color: white;
             font-size: 1em;
             height: 100%;
-            border-top-left-radius: 50px;
-            border-bottom-left-radius: 50px;
+            border-top-right-radius: 80px;
+            border-bottom-right-radius: 80px;
+            border-top-left-radius: 80px;
+            border-bottom-left-radius: 80px;
            
         }
     }
     :nth-child(2){
         position: absolute;
-        width: 50%;
+        width: 100%;
         height:100%;
        
         animation: TransitionOpacity 9s linear 2s infinite;
         &::before{
             content: 'Box 2';
-            text-align: right;
+            text-align: center;
             background: #A3DEDC;
             display: block;
             color: #011514;
             font-size: 1em;
             height: 100%;
-            border-top-left-radius: 50px;
-            border-bottom-left-radius: 50px;
+            border-top-right-radius: 80px;
+            border-bottom-right-radius: 80px;
+            border-top-left-radius: 80px;
+            border-bottom-left-radius: 80px;
            
         }
     }
     :nth-child(3){
         position: absolute;
-        width: 50%;
+        width: 100%;
         height:100%;
        
         animation: TransitionOpacity 9s linear 5s infinite;
@@ -211,15 +214,17 @@ html, body{
             color: #E0F4F3;
             font-size: 1em;
             height: 100%;
-            border-top-left-radius: 50px;
-            border-bottom-left-radius: 50px;
+             border-top-right-radius: 80px;
+            border-bottom-right-radius: 80px;
+            border-top-left-radius: 80px;
+            border-bottom-left-radius: 80px;
            
         }
     }
   }
 
 /* Example 2 */
-.container-global-test .box-body .box-item :nth-child(2) .exercise2 {
+.container-global-test .box-body .box-item #exercise2 {
   
     width: 50%;
     height: 100%;
@@ -228,7 +233,7 @@ html, body{
         width: 50%;
         height:100%;
         
-        animation: TransitionBg 5s linear 1.5s infinite;
+        animation: TransitionBg 5s ease-in 1.5s infinite;
         &::before{
             content: 'Box 4';
             text-align: center;
@@ -237,8 +242,10 @@ html, body{
             color: white;
             font-size: 1em;
             height: 100%;
-            border-top-right-radius: 50px;
-            border-bottom-right-radius: 50px;
+            border-top-right-radius: 80px;
+            border-bottom-right-radius: 80px;
+            border-top-left-radius: 80px;
+            border-bottom-left-radius: 80px;
            
         }
     }
@@ -248,7 +255,7 @@ html, body{
 
 /* Example 3 */
 
-.container-global-test .box-body .box-item :nth-child(1) .exercise3 {
+.container-global-test .box-body .box-item #exercise3 {
   
     width: 100%;
     height: 100%;
@@ -259,14 +266,17 @@ html, body{
         animation: TransitionBg2 4s linear 2s infinite;
         &::before{
             content: 'Box 5';
-            text-align: right;
+            text-align: center;
             background: #09A7A1;
             display: block;
             color: white;
             font-size: 1em;
             height: 100%;
-            border-top-left-radius: 50px;
-            border-bottom-left-radius: 50px;
+
+           border-top-right-radius: 80px;
+            border-bottom-right-radius: 80px;
+            border-top-left-radius: 80px;
+            border-bottom-left-radius: 80px;
            
         }
     }
@@ -274,14 +284,16 @@ html, body{
   }
     
   /* Example 4 */
-.container-global-test .box-body .box-item :nth-child(2) .exercise4 {
+.container-global-test .box-body .box-item #exercise4 {
   
-    width: 50%;
+    width: 100%;
     height: 100%;
+    
     :nth-child(1){
         position: absolute;
-        width: 50%;
+        width: 100%;
         height:100%;
+       
         
         animation: TransitionBg3 5s linear 1.5s infinite;
         &::before{
@@ -292,32 +304,46 @@ html, body{
             color: #055451;
             font-size: 1em;
             height: 100%;
-            border-top-right-radius: 50px;
-            border-bottom-right-radius: 50px;
+            border-top-right-radius: 80px;
+            border-bottom-right-radius: 80px;
+            border-top-left-radius: 80px;
+            border-bottom-left-radius: 80px;
            
         }
     }
     
     
   }
-     
-.container-global-test .box-body .box-item :nth-child(1) .exercise5{
+   /* Example 5 */  
+.container-global-test .box-body .box-item #exercise5{
     position: relative;
     width: 100%;
     height: 100%;
-    background: #055451;
-    text-align: center;
-   
-    a{
-        
-        color: white;
+    border-top-right-radius: 80px;
+    border-bottom-right-radius: 80px;
+    border-top-left-radius: 80px;
+    border-bottom-left-radius: 80px;
+        a{
+        width: 100%;
+        color: palegoldenrod;
         background: #077D79;
-        margin: 2px auto;
-       
-        
-    }
+        border-top-right-radius: 80px;
+        border-bottom-right-radius: 80px;
+        border-top-left-radius: 80px;
+        border-bottom-left-radius: 80px;
+        }
 } 
-
+/* Example 6 */
+.container-global-test .box-body .box-item #exercise6 {
+  
+    width: 100%;
+    height: 100%;
+    background: #65C8C4;
+    border-top-right-radius: 80px;
+    border-bottom-right-radius: 80px;
+    border-top-left-radius: 80px;
+    border-bottom-left-radius: 80px;
+}
 /* Transiciones y animaciones */
 @keyframes TransitionOpacity{
 
@@ -340,15 +366,15 @@ html, body{
         /* color: white  ;
         opacity: 1; */
        /* left: -20px; */
-       width: 0%;
-       height: 0%;
+       width: 30%;
+       height: 60%;
     }
 
     to {
         /* color: black;  
         opacity:0; */
         /* left: 20px; */
-        width: 50%;
+        width: 100%;
          height: 100%;
        
     }
@@ -356,12 +382,11 @@ html, body{
 }
 @keyframes TransitionBg2{
 
-
  from {
         /* color: white  ;
         opacity: 1; */
        /* left: -20px; */
-       width: 8%;
+       width: 10%;
       
     }
 
@@ -369,7 +394,7 @@ html, body{
         /* color: black;  
         opacity:0; */
         /* left: 20px; */
-        width: 50%;
+        width: 100%;
         
        
     }
@@ -382,7 +407,7 @@ html, body{
         /* color: white  ;
         opacity: 1; */
        /* left: -20px; */
-       width: 50%;
+       width: 100%;
       
     }
 
@@ -390,7 +415,7 @@ html, body{
         /* color: black;  
         opacity:0; */
         /* left: 20px; */
-        width: 0%;
+        width: 10%;
         
         
        
