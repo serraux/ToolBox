@@ -1,0 +1,42 @@
+* {
+  margin: 0;
+}
+#cont-static {
+  width: 100%;
+  height: 50px;
+  background: rgb(255, 72, 0);
+  text-align: center;
+}
+#cont-absolute {
+  position: absolute;
+  width: 100%;
+  height: 50px;
+  background: rgb(229, 255, 0);
+  text-align: center;
+}
+#cont-relative {
+  position: relative;
+  width: 100%;
+  height: 50px;
+  background: rgb(0, 174, 255);
+  top: -150px;
+  text-align: center;
+}
+#cont-fixed {
+  position: fixed;
+  width: 100%;
+  height: 50px;
+  background: rgb(255, 0, 234);
+  text-align: center;
+  top: 50px;
+  margin-bottom: 100px;
+}
+#cont-sticky {
+  position: sticky;
+  width: 50%;
+  height: 50px;
+  background: rgb(0, 255, 0);
+  text-align: center;
+  top: 150px;
+  
+}
