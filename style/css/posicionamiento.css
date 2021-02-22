@@ -1,42 +1,162 @@
 * {
   margin: 0;
+  padding: 0;
+  font-family: sans-serif;
 }
 
-#cont-static {
-  width: 100%;
-  height: 50px;
-  background: #ff4800;
+:root {
+  --heightContainer: 80px;
+  --widthContainer: 90%;
+  --paddContainer: 10px;
+  --widthParag: 80%;
+  --bckGray100: rgb(129, 123, 123);
+  --bckGray200: rgb(185, 179, 179);
+  --bckGray300: rgb(233, 229, 229);
+}
+
+h2 {
   text-align: center;
+  background: silver;
+  padding: 5px;
+  color: #4b4949;
 }
 
-#cont-absolute {
-  position: absolute;
-  width: 100%;
-  height: 50px;
-  background: #e5ff00;
-  text-align: center;
-}
-
-#cont-relative {
+.global1 {
   position: relative;
-  width: 100%;
+  width: 90%;
+  height: 330px;
+  background: var(--bckGray100);
+  padding-left: var(--paddContainer);
+}
+
+.global1 .cont-static {
+  width: var(--widthContainer);
+  height: var(--heightContainer);
+  background: rgba(255, 72, 0, 0.3);
+  text-align: left;
+}
+
+.global1 .cont-static h1 {
+  font-size: 1.5em;
+  color: rgba(26, 25, 25, 0.8);
+  font-size: 1.5em;
+}
+
+.global1 .cont-absolute {
+  /* var(--widthcontainer) */
+  position: absolute;
+  width: 90%;
+  height: var(--heightContainer);
+  background: rgba(0, 255, 255, 0.3);
+  text-align: left;
+  bottom: 0;
+}
+
+.global1 .cont-absolute h1 {
+  font-size: 1.5em;
+  font-size: 1.5em;
+  color: rgba(26, 25, 25, 0.8);
+}
+
+.global1 .cont-relative {
+  position: relative;
+  width: 90%;
+  height: var(--heightContainer);
+  background: rgba(255, 0, 191, 0.3);
+  text-align: right;
+}
+
+.global1 .cont-relative h1 {
+  font-size: 1.5em;
+  font-size: 1.5em;
+  color: rgba(26, 25, 25, 0.8);
+}
+
+.global1 .cont-fixed {
+  position: relative;
+  width: 90%;
+  height: var(--heightContainer);
+  background: rgba(0, 255, 21, 0.3);
+  text-align: left;
+}
+
+.global1 .cont-fixed h1 {
+  font-size: 1.5em;
+  color: rgba(26, 25, 25, 0.8);
+}
+
+.global1 .cont-sticky {
+  position: -webkit-sticky;
+  position: sticky;
+  width: 50%;
   height: 50px;
-  background: #00aeff;
-  top: -150px;
+  background: lime;
+  text-align: center;
+  top: 150px;
+}
+
+.global2 {
+  width: 90%;
+  height: 330px;
+  background: var(--bckGray200);
+  padding-left: var(--paddContainer);
+  padding-right: var(--paddContainer);
+}
+
+.global2 .cont-static2 {
+  width: 90%;
+  height: var(--heightContainer);
+  background: rgba(255, 72, 0, 0.3);
+  text-align: left;
+}
+
+.global2 .cont-static2 h1 {
+  font-size: 1.5em;
+  color: rgba(26, 25, 25, 0.8);
+}
+
+.cont-absolute2 {
+  position: absolute;
+  width: 90%;
+  height: var(--heightContainer);
+  background: rgba(0, 255, 255, 0.3);
+  text-align: center;
+  left: 0px;
+  bottom: 0;
+}
+
+.cont-absolute2 h1 {
+  font-size: 1.5em;
+  color: rgba(26, 25, 25, 0.8);
+}
+
+.cont-relative {
+  position: relative;
+  width: 90%;
+  height: var(--heightContainer);
+  background: rgba(255, 0, 191, 0.3);
   text-align: center;
 }
 
-#cont-fixed {
-  position: fixed;
-  width: 100%;
-  height: 50px;
-  background: #ff00ea;
-  text-align: center;
-  top: 50px;
-  margin-bottom: 100px;
+.cont-relative h1 {
+  font-size: 1.5em;
+  color: rgba(26, 25, 25, 0.8);
 }
 
-#cont-sticky {
+.cont-fixed {
+  position: relative;
+  width: 90%;
+  height: var(--heightContainer);
+  background: rgba(0, 255, 21, 0.3);
+  text-align: center;
+}
+
+.cont-fixed h1 {
+  font-size: 1.5em;
+  color: rgba(26, 25, 25, 0.8);
+}
+
+.cont-sticky {
   position: -webkit-sticky;
   position: sticky;
   width: 50%;

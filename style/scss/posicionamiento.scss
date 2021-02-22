@@ -1,42 +1,157 @@
 * {
   margin: 0;
+  padding: 0;
+  font-family: sans-serif;
 }
-#cont-static {
-  width: 100%;
-  height: 50px;
-  background: rgb(255, 72, 0);
+:root {
+  --heightContainer: 80px;
+  --widthContainer: 90%;
+  --paddContainer: 10px;
+  --widthParag: 80%;
+  --bckGray100: rgb(129, 123, 123);
+  --bckGray200: rgb(185, 179, 179);
+  --bckGray300: rgb(233, 229, 229);
+}
+h2 {
   text-align: center;
+  background: silver;
+  padding: 5px;
+  color: rgb(75, 73, 73);
 }
-#cont-absolute {
+.global1 {position: relative;
+  width: 90%;
+  height: 330px;
+  background: var(--bckGray100);
+
+  // margin: 20px;
+  padding-left: var(--paddContainer);
+  // padding-right: var(--paddContainer);
+
+  .cont-static {
+    width: var(--widthContainer);
+    height: var(--heightContainer);
+    background: rgba(255, 72, 0, 0.3);
+    text-align: left;
+
+    h1 {
+      font-size: 1.5em;
+      color: rgba(26, 25, 25, 0.8);
+      font-size: 1.5em;
+    }
+  }
+  .cont-absolute {
+    /* var(--widthcontainer) */
+    position: absolute;
+    width: 90%;
+    height: var(--heightContainer);
+    background: rgba(0, 255, 255, 0.3);
+    text-align: left;
+    //top: 0;
+    bottom: 0;
+    h1 {
+      font-size: 1.5em;
+      font-size: 1.5em;
+      color: rgba(26, 25, 25, 0.8);
+    }
+  }
+  .cont-relative {
+    position: relative;
+    width: 90%;
+    height: var(--heightContainer);
+    background: rgba(255, 0, 191, 0.3);
+    text-align: right;
+    //top: var(--heightContainer);
+    h1 {
+      font-size: 1.5em;
+      font-size: 1.5em;
+      color: rgba(26, 25, 25, 0.8);
+    }
+  }
+  .cont-fixed {
+    position: relative;
+    width: 90%;
+    height: var(--heightContainer);
+    background: rgba(0, 255, 21, 0.3);
+    text-align: left;
+    //top: var(--heightContainer);
+    h1 {
+      font-size: 1.5em;
+      color: rgba(26, 25, 25, 0.8);
+    }
+  }
+  .cont-sticky {
+    position: sticky;
+    width: 50%;
+    height: 50px;
+    background: rgb(0, 255, 0);
+    text-align: center;
+    top: 150px;
+  }
+}
+
+.global2 {
+  width: 90%;
+  height: 330px;
+  background: var(--bckGray200);
+  padding-left: var(--paddContainer);
+  padding-right: var(--paddContainer);
+  .cont-static2 {
+    width: 90%;
+    height: var(--heightContainer);
+    background: rgba(255, 72, 0, 0.3);
+    text-align: left;
+    //margin-top: 200px;
+
+    h1 {
+      font-size: 1.5em;
+      color: rgba(26, 25, 25, 0.8);
+    }
+  }
+}
+.cont-absolute2 {
   position: absolute;
-  width: 100%;
-  height: 50px;
-  background: rgb(229, 255, 0);
+  width: 90%;
+  height: var(--heightContainer);
+  background: rgba(0, 255, 255, 0.3);
   text-align: center;
+  //margin-top: var(--heightContainer);
+  left: 0px;
+  bottom: 0;
+  h1 {
+    font-size: 1.5em;
+    color: rgba(26, 25, 25, 0.8);
+  }
 }
-#cont-relative {
+.cont-relative {
   position: relative;
-  width: 100%;
-  height: 50px;
-  background: rgb(0, 174, 255);
-  top: -150px;
+  width: 90%;
+  height: var(--heightContainer);
+  background: rgba(255, 0, 191, 0.3);
   text-align: center;
+  //top: var(--heightContainer);
+  h1 {
+    font-size: 1.5em;
+    color: rgba(26, 25, 25, 0.8);
+  }
 }
-#cont-fixed {
-  position: fixed;
-  width: 100%;
-  height: 50px;
-  background: rgb(255, 0, 234);
+
+.cont-fixed {
+  position: relative;
+  width: 90%;
+  height: var(--heightContainer);
+  background: rgba(0, 255, 21, 0.3);
   text-align: center;
-  top: 50px;
-  margin-bottom: 100px;
+  //top: var(--heightContainer);
+  h1 {
+    font-size: 1.5em;
+    color: rgba(26, 25, 25, 0.8);
+  }
 }
-#cont-sticky {
+.cont-sticky {
   position: sticky;
   width: 50%;
   height: 50px;
   background: rgb(0, 255, 0);
   text-align: center;
   top: 150px;
-  
 }
